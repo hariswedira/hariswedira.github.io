@@ -89,7 +89,7 @@
       </div>
       <div class="row">
         <div class="col-md mb-4">
-          <div class="card port">
+          <div class="card port" id="omni" onclick="link(this.id)">
             <img class="card-img-top" src="img/thumbs/1.png" alt="Card image cap">
             <div class="card-body">
               <p class="card-text text-center">Omnifood</p>
@@ -98,7 +98,7 @@
         </div>
 
         <div class="col-md mb-4">
-          <div class="card port">
+          <div class="card port" id="chat" onclick="link(this.id)">
             <img class="card-img-top" src="img/thumbs/2.png" alt="Card image cap">
             <div class="card-body">
               <p class="card-text text-center">Cheva Chat</p>
@@ -107,7 +107,7 @@
         </div>
 
         <div class="col-md mb-4">
-          <div class="card port">
+          <div class="card port" id="quiz" onclick="link(this.id)">
             <img class="card-img-top" src="img/thumbs/3.png" alt="Card image cap">
             <div class="card-body">
               <p class="card-text text-center">Cheva Quiz</p>
@@ -118,7 +118,7 @@
 
       <div class="row">
         <div class="col-md mb-4">
-          <div class="card port">
+          <div class="card port" id="todo" onclick="link(this.id)">
             <img class="card-img-top" src="img/thumbs/4.png" alt="Card image cap">
             <div class="card-body">
               <p class="card-text text-center">Cheva Todo</p>
@@ -126,7 +126,7 @@
           </div>
         </div>
         <div class="col-md mb-4">
-          <div class="card port">
+          <div class="card port" id="toko" onclick="link(this.id)">
             <img class="card-img-top" src="img/thumbs/5.png" alt="Card image cap">
             <div class="card-body">
               <p class="card-text text-center">Toko Go
@@ -136,7 +136,7 @@
         </div>
 
         <div class="col-md mb-4">
-          <div class="card port">
+          <div class="card port" id="pomo" onclick="link(this.id)">
             <img class="card-img-top" src="img/thumbs/6.png" alt="Card image cap">
             <div class="card-body">
               <p class="card-text text-center">Pomodoro Go</p>
@@ -214,17 +214,11 @@
     <div class="container">
       <div class="row">
         <div class="col text-center">
-          <p>Copyright &copy; 2018.</p>
+          <p>Copyright &copy; 2019.</p>
         </div>
       </div>
     </div>
   </footer>
-
-
-
-
-
-
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -236,6 +230,23 @@
   </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
     integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
+  </script>
+  <script>
+    function link(id) {
+      if (id == "todo") {
+        window.open("https://github.com/hariswedira/Cheva-Todos");
+      } else if (id == "omni") {
+        window.open("https://github.com/hariswedira/Omnifood");
+      } else if (id == "pomo") {
+        window.open("https://play.google.com/store/apps/details?id=org.d3ifcool.pomodorogo");
+      } else if (id == "toko") {
+        window.open("https://github.com/hariswedira/Toko-Go");
+      } else if (id == "chat") {
+        window.open("https://github.com/hariswedira/cheva-chat-v2");
+      } else if (id == "quiz") {
+        window.open("https://github.com/hariswedira/cheva-quiz");
+      }
+    }
   </script>
 </body>
 
